@@ -1,0 +1,12 @@
+This directory contains images for the website. Please add the following images:
+
+1. coding1.jpg - A photo of someone coding
+2. coding2.jpg - Another coding photo
+3. project1.jpg - A web project screenshot
+4. project2.jpg - Another project screenshot
+5. graduation1.jpg - A graduation celebration photo
+6. graduation2.jpg - A certificate photo
+7. avatar1.jpg - Profile avatar
+8. avatar2.jpg - Profile avatar
+9. avatar3.jpg - Profile avatar
+10. avatar-default.jpg - Default profile avatar 
