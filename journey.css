@@ -1,0 +1,172 @@
+/* تنسيق صفحة رحلة النجاح */
+.journey-container {
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    min-height: calc(100vh - 80px);
+}
+
+/* تنسيق الخط الزمني */
+.timeline {
+    position: relative;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #3498db;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    margin-right: -2px;
+    border-radius: 2px;
+}
+
+/* تنسيق عناصر الخط الزمني */
+.timeline-item {
+    position: relative;
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: #3498db;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.timeline-content.right {
+    margin-right: auto;
+}
+
+.timeline-content.right::before {
+    right: -60px;
+}
+
+.timeline-content.left {
+    margin-left: auto;
+}
+
+.timeline-content.left::before {
+    left: -60px;
+}
+
+/* تنسيق محتوى العناصر */
+.timeline-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.timeline-content p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.timeline-icon {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+/* تنسيق القسم الأيمن */
+.journey-details {
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.journey-details h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.milestone {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.milestone:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.milestone-icon {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.milestone h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.milestone p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* تحسينات للأجهزة المحمولة */
+@media (max-width: 768px) {
+    .journey-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .timeline::before {
+        right: 0;
+        margin-right: 0;
+    }
+
+    .timeline-content {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .timeline-content.right,
+    .timeline-content.left {
+        margin: 1rem 0;
+    }
+
+    .timeline-content.right::before,
+    .timeline-content.left::before {
+        right: -30px;
+        left: auto;
+    }
+} 

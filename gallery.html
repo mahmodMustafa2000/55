@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الصور - تهنئة أحمد</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">🎓 تهنئة أحمد</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="journey.html">رحلة النجاح</a></li>
+                <li><a href="skills.html">المهارات</a></li>
+                <li><a href="gallery.html" class="active">معرض الصور</a></li>
+                <li><a href="wishes.html">رسائل التهنئة</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-section gallery-hero">
+        <h1 class="main-title">معرض الصور 📸</h1>
+        <p class="subtitle">لحظات مميزة من رحلة النجاح</p>
+        <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container gallery-page">
+        <div class="gallery-intro">
+            <div class="section-icon">
+                <i class="fas fa-camera-retro"></i>
+            </div>
+            <p class="intro-text">
+                مجموعة من اللحظات المميزة التي توثق رحلة أحمد في تعلم تطوير الويب المتكامل.
+                كل صورة تحكي قصة من قصص النجاح والإصرار على التعلم.
+            </p>
+        </div>
+
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-th"></i>
+                الكل
+            </button>
+            <button class="filter-btn" data-filter="study">
+                <i class="fas fa-laptop-code"></i>
+                الدراسة
+            </button>
+            <button class="filter-btn" data-filter="projects">
+                <i class="fas fa-project-diagram"></i>
+                المشاريع
+            </button>
+            <button class="filter-btn" data-filter="graduation">
+                <i class="fas fa-graduation-cap"></i>
+                التخرج
+            </button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item study">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="صورة من رحلة التعلم">
+                <div class="gallery-overlay">
+                    <h3>بداية الرحلة</h3>
+                    <p>أول يوم في دورة Full Stack</p>
+                </div>
+            </div>
+            <div class="gallery-item projects">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="مشروع ويب">
+                <div class="gallery-overlay">
+                    <h3>المشروع الأول</h3>
+                    <p>تطبيق ويب تفاعلي</p>
+                </div>
+            </div>
+            <div class="gallery-item study">
+                <img src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2" alt="جلسة دراسة">
+                <div class="gallery-overlay">
+                    <h3>ساعات من العمل</h3>
+                    <p>التركيز والإصرار</p>
+                </div>
+            </div>
+            <div class="gallery-item projects">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8" alt="واجهة مستخدم">
+                <div class="gallery-overlay">
+                    <h3>تصميم واجهة المستخدم</h3>
+                    <p>تجربة مستخدم مميزة</p>
+                </div>
+            </div>
+            <div class="gallery-item graduation">
+                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94" alt="لحظة التخرج">
+                <div class="gallery-overlay">
+                    <h3>لحظة التخرج</h3>
+                    <p>تحقيق الحلم</p>
+                </div>
+            </div>
+            <div class="gallery-item graduation">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="الشهادة">
+                <div class="gallery-overlay">
+                    <h3>الشهادة المستحقة</h3>
+                    <p>ثمرة التعب والجهد</p>
+                </div>
+            </div>
+            <div class="gallery-item study">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="تعلم البرمجة">
+                <div class="gallery-overlay">
+                    <h3>تحديات البرمجة</h3>
+                    <p>حل المشكلات البرمجية</p>
+                </div>
+            </div>
+            <div class="gallery-item projects">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3" alt="مشروع متقدم">
+                <div class="gallery-overlay">
+                    <h3>المشروع النهائي</h3>
+                    <p>تطبيق ويب متكامل</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-modal">
+        <span class="close-modal">&times;</span>
+        <img src="" alt="" class="modal-image">
+        <div class="modal-caption"></div>
+        <button class="modal-prev"><i class="fas fa-chevron-right"></i></button>
+        <button class="modal-next"><i class="fas fa-chevron-left"></i></button>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>تم التصميم بكل ❤️ لأخي أحمد</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html> 
